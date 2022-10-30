@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <div style="text-align: center;">
+            <h1>Programa de sueldo</h1>
+        </div>
+    </nav>
+    <div style="text-align: center;">
+        <div class="cuadrado" style="float: left; width: 45%; position: relative;" >
+            <div>
+                <div>
+                    <div style="text-align: center;" id="neon">
+                        <p>
+                            Nombre Completo
+                        </p>
+                        <input type="text" id="nombre">
+                    </div>
+                    <div style="text-align: center;" id="neon">
+                        <p>
+                            Salario Basico
+                        </p>
+                        <input type="number" value="0" id="salarioBasico">
+                    </div>
+                    <div style="text-align: center;" id="neon">
+                        <p>
+                            Fecha de ingreso a la empresa
+                        </p>
+                        <input type="date" id="ingreso">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div style="text-align: center;">
+                        <div style="text-align: center;" id="neon">
+                            <h5>
+                                Horas extras Lunes a Sabados
+                            </h5>
+                        </div>
+                        <input type="number" value="0" id="horasExtras1">
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="text-align: center;" id="neon">
+                            <h5>
+                                Horas extras Sabados
+                            </h5>
+                        </div>
+                        <input type="number" value="0" id="horasExtras2">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div style="text-align: center;">
+                    <div style="text-align: center;" id="neon">
+                        <h5 class="pb-3">
+                            ¿Cuantos feriados hubo de Lunes a Viernes?
+                        </h5>
+                    </div>
+                    <input type="number" value="0" id="feriados1">
+                    <div style="text-align: center;" id="neon">
+                        <h5>
+                            ¿Cuantos feriados hubo los sabados?
+                        </h5>
+                    </div>
+                    <input type="number" value="0" id="feriados2">
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div style="text-align: center;">
+                        <br>
+                        <label style="text-align: center;" id="neon">
+                            ¿Cuantas ausencias tuvo de Lunes a viernes?
+                        </label>
+                    </div>
+                    <br>
+                    <div style="text-align: center;">
+                        <input type="number" id="ausencias1">
+                    </div>
+                    <div style="text-align: center;">
+                        <br>
+                        <label style="text-align: center;" id="neon">
+                            ¿Cuantas Faltas Justificadas han sido?
+                        </label>
+                    </div>
+                    <br>
+                    <div style="text-align: center;">
+                        <input type="number" value="0" id="ausenciasJustificadas1">
+                    </div>
+                    <div>
+                        <br>
+                        <div style="text-align: center;">
+                            <label style="text-align: center;" id="neon">
+                                ¿Cuantas ausencias tuvo los sabados?
+                            </label>
+                        </div>
+                        <br>
+                        <div style="text-align: center;">
+                            <input type="number" value="0" id="ausencias2">
+                            <p style="text-align: center;" id="neon">
+                                ¿Cuantas faltas justificadas han sido?
+                            </p>
+                        </div>
+                        <div style="text-align: center;">
+                            <input type="number" value="0" id="ausenciasJustificadas2">
+                        </div>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="recibo" class="cuadrado" style="width: 45%; float: right; position: relative;">
+            <div id="neon">
+                <div>
+                    <label>
+                        Nombre
+                    </label>
+                    <h5 id="reciboNombre" class="neon2">
+                    </h5>
+                </div>
+                <div>
+                    <label>
+                        Ingreso
+                    </label>
+                    <h5 id="reciboIngreso" class="neon2">
+                    </h5>
+                </div>
+                <div>
+                    <label>
+                        Salario basico
+                    </label>
+                </div>
+                <div>
+                    <h5 id="reciboSalarioBasico" class="neon2">
+                    </h5>
+                </div>
+                <div>
+                    <label>
+                        Ausencias Justificadas
+                    </label>
+                </div>
+                <div>
+                    <h5 id="reciboAusenciasJustificadas" class="neon2">
+                    </h5>
+                </div>
+                <div>
+                    <label>
+                        Horas extras
+                    </label>
+                </div>
+                <div>
+                    <h5 id="reciboHorasExtras" class="neon2">
+                    </h5>
+                </div>
+                <div>
+                    <label>
+                        Feriados
+                    </label>
+                </div>
+                <div>
+                    <h5 id="reciboFeriados" class="neon2">
+                    </h5>
+                </div>
+                <div>
+                    <label>
+                        Presentismo
+                    </label>
+                </div>
+                <div>
+                    <h5 id="reciboPresentismo" class="neon2">
+                    </h5>
+                </div>
+                <div>
+                    <label>
+                        Productividad 
+                    </label>
+                </div>
+                <div>
+                    <h5 id="reciboProductividad" class="neon2">
+                    </h5>
+                </div>
+                <div>
+                    <label>
+                        Jubilación
+                    </label>
+                </div>
+                <div>
+                    <h5 id="reciboJubilacion" class="neon2">
+                    </h5>
+                </div>
+                <div>
+                    <label>
+                        Obra Social
+                    </label>
+                </div>
+                <div>
+                    <h5 id="reciboObraSocial" class="neon2">
+                    </h5>
+                </div>
+                <div>
+                    <label>
+                        Ley 19032
+                    </label>
+                </div>
+                <div>
+                    <h5 id="reciboLey" class="neon2">
+                    </h5>
+                </div>
+                <div>
+                    <label>
+                        Salario Bruto
+                    </label>
+                    <h5 id="reciboSalarioBruto" class="neon2">
+                    </h5>
+                </div>
+                <div>
+                    <label>
+                        Retenciones
+                    </label>
+                    <h5 id="reciboRetenciones" class="neon2">
+                    </h5>
+                </div>
+                <div>
+                    <label>
+                        Salario Neto
+                    </label>
+                    <h5 id="reciboSalarioNeto" class="neon2">
+                    </h5>
+                </div>
+                <div>
+                    <label>
+                        Dias de Vacaciones
+                    </label>
+                </div>
+                <div>
+                    <h5 id="reciboDiasVacaciones" class="neon2">
+                    </h5>
+                </div>
+                <div>
+                    <label>
+                        Salario de Vacaciones
+                    </label>
+                </div>
+                <div>
+                    <h5 id="reciboSalarioVacaciones" class="neon2">
+                    </h5>
+                </div>
+                <div>
+                    <label>
+                        Aguinaldo semestral
+                    </label>
+                </div>
+                <div>
+                    <h5 id="reciboAguinaldo" class="neon2">
+                    </h5>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <br>
+                <div style="text-align: center; margin: 0,1%; position:relative; " id="neon">
+                    <button class="cuadrado" style="margin-left: 30px; margin-right: 30px; width:80px;height:70px;" type="button" onclick="calcularSalario()">
+                        Calcular
+                    </button>
+                    <img src="" alt="">
+                </div>
+                <br>
+            </div>
+        </div>
+        <script src="cuenta.js"></script>
+    </div>
+</body>
+
+</html>
